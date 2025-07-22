@@ -117,7 +117,7 @@ export default function PhotoCaptureButton({
 
   return (
     <>
-      <Button size="lg" className="bg-teal-800 text-teal-100" disabled={isLoading} onClick={() => handleOpenChange(true)}>
+      <Button size="lg" className="bg-teal-800 text-teal-100 hover:bg-teal-600" disabled={isLoading} onClick={() => handleOpenChange(true)}>
         <Camera className="mr-2 h-5 w-5" /> Neue Pflanze scannen
       </Button>
       <Dialog open={isDialogOpen} onOpenChange={handleOpenChange}>
